@@ -6,15 +6,14 @@
       rel="noopener noreferrer">Ember.js Tutorial</a>.</p>
   <p>Don't forget to check out other menu points as well. ;)</p>
   <div class="form-horizontal form-group form-group-lg row">
-    <div
-      class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-2">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-2">
       <Input @type="email" @value={{this.emailAddress}} class="form-control"
         placeholder="Please type your e-mail address." @autofocus="autofocus" />
     </div>
     <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-3">
       <button type="button" class="btn btn-primary btn-lg btn-block"
-        {{on 'click' (fn this.saveInvitation)}}
-        disabled={{this.isDisabled}}>Request invitation
+        {{on 'click' (fn this.saveInvitation)}} disabled={{this.isDisabled}}>
+        Request invitation
       </button>
     </div>
   </div>
