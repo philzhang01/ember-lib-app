@@ -6,9 +6,9 @@ export default class LibrariesEditRoute extends Route {
     return this.store.findRecord('library', params.library_id);
   }
 
-  // renderTemplate() {
-  //   this.render('library/form');
-  // }
+  renderTemplate() {
+    this.render('libraries/form');
+  }
 
   @action
   willTransition(transition) {
