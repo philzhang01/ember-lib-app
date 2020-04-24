@@ -22,6 +22,9 @@ export default class SeederBlockComponent extends Component {
   @or('isCounterNotValid', 'generateInProgress', 'deleteInProgress') generateIsDisabled;
   @or('generateInProgress', 'deleteInProgress') deleteIsDisabled;
 
+  seederFn = this.args.seederFn;
+  destroyerFn = this.args.destroyerFn;
+
   @action
   generate() {
     if (this.counter && this.isCounterValid) {

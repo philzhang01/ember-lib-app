@@ -1,5 +1,6 @@
 import Model, { attr, hasMany } from '@ember-data/model';
 import { notEmpty } from '@ember/object/computed';
+import Faker from 'faker';
 
 export default class LibraryModel extends Model {
   @attr('string') name;

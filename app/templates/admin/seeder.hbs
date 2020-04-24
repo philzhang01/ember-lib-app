@@ -12,6 +12,13 @@
   </div>
 </div>
 
-<SeederBlock @sectionTitle="Libraries" />
+<SeederBlock @sectionTitle="Libraries" @seederFn={{this.seederService.seedRandomLibraries}}
+  @destroyerFn={{this.seederService.deleteLibraries}}
+  @seedingInProgress={{this.seederService.seedingLibrariesInProgress}}
+  @deletingInProgress={{this.seederService.deletingLibrariesInProgress}} />
 
-<SeederBlock @sectionTitle="Authors with Books" />
+<SeederBlock @sectionTitle="Authors with Books"
+  @seederFn={{this.seederService.seedRandomAuthorsWithBooks}}
+  @destroyerFn={{this.seederService.deleteAuthorsAndTheirBooks}}
+  @seedingInProgress={{this.seederService.seedingAuthorsInProgress}}
+  @deletingInProgress={{this.seederService.deletingAuthorsInProgress}} />
