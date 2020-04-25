@@ -1,9 +1,43 @@
 @import 'ember-bootstrap/bootstrap';
 
+body {
+  padding-top: 20px;
+}
+
 html {
   overflow-y: scroll;
 }
 
 .library-item {
   min-height: 150px;
+}
+
+.alert-fade {
+  height: 50px;
+  opacity: 0;
+  @include transition(all 0.5s);
+  &.alert-show {
+    opacity: 1;
+  }
+}
+
+.btn-narrow {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.vtop {
+  vertical-align: top !important;
+}
+
+.not-bold {
+  font-weight: normal !important;
+}
+
+th.wider {
+  min-width: 200px;
+}
+
+.extra-padding-bottom {
+  padding-bottom: 20px;
 }

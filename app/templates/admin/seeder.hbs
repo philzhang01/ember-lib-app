@@ -12,6 +12,10 @@
   </div>
 </div>
 
+<div class="alert alert-info alert-fade {{if this.seederService.doneMessage 'alert-show'}}">
+  {{ this.seederService.doneMessage }}
+</div>
+
 <SeederBlock @sectionTitle="Libraries" @seederFn={{this.seederService.seedRandomLibraries}}
   @destroyerFn={{this.seederService.deleteLibraries}}
   @seedingInProgress={{this.seederService.seedingLibrariesInProgress}}
